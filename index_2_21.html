@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style>input[type="radio"]{
+    display: none;
+}
+
+.tab_area label{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ddd;
+    cursor:pointer;
+}
+
+.tab_panel{
+    display: none;
+    padding: 20px;
+}
+
+#tab1:checked~ .tab_area .tab1_label{
+     background:#fff;
+}
+
+#tab2:checked~ .tab_area .tab2_label{
+     background:#fff;
+}
+
+#tab3:checked~ .tab_area .tab3_label{
+     background:#fff;
+}
+ #tab1:checked~ .panel_area #panel1{
+     display:block;
+}
+
+ #tab2:checked~ .panel_area #panel2{
+     display:block;
+}
+
+ #tab3:checked~ .panel_area #panel3{
+     display:block;
+}</style>
+            </head>
+            <body>
+                
+
+
+  <meta charset="UTF-8">
+
+
+
+
+<div class="tab_wrap">
+
+<input id="tab1" type="radio" name="tab" checked="">
+<input id="tab2" type="radio" name="tab">
+<input id="tab3" type="radio" name="tab">
+
+<div class="tab_area">
+  <label for="tab1" class="tab1_label">タブ1</label>
+  <label for="tab2" class="tab2_label">タブ2</label>
+  <label for="tab3" class="tab3_label">タブ3</label>
+</div>
+
+  <div class="panel_area">
+    <div id="panel1" class="tab_panel">タブパネル-1</div>
+    <div id="panel2" class="tab_panel">タブパネル-2</div>
+    <div id="panel3" class="tab_panel">タブパネル-3</div>
+
+</div>
+
+
+
+
+ 
+                <script>// Write JavaScript here</script>
+            
+        
+    </div></body>
