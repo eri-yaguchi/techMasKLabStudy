@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style>.container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 50px 50px 50px 50px 50px;
+}
+
+.header {
+grid-column: 1/4;
+background: blue;
+}
+
+.top{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/4;
+
+}
+.content1 {
+background: lime;
+}
+
+.content2 {
+background: red;
+}
+
+.content3-1 {
+grid-column:1/2;
+background: lightblue;
+}
+
+.content3-2 {
+grid-column:2/3;
+background: white;
+}
+
+.content3-3 {
+grid-column:3/4;
+background: yellow;
+}
+
+.bottom{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/4;
+}
+.content4-1 {
+background: purple;
+}
+
+.content4-2 {
+background: magenta;
+}
+
+.footer {
+grid-column:1/4;
+background: brown;
+}</style>
+            </head>
+            <body>
+                
+
+
+  <meta charset="UTF-8">
+  <title>layout</title>
+  <link rel="stylesheet" href="style.css">
+
+
+
+<div class="container">
+
+<header class="header">header</header>
+
+<div class="top">
+<div class="content1">content-1</div>
+<div class="content2">content-2</div>
+</div>
+
+<div class="content3-1">content-3-1</div>
+<div class="content3-2">content-3-2</div>
+<div class="content3-3">content-3-3</div>
+
+<div class="bottom">
+<div class="content4-1">content-4-1</div>
+<div class="content4-2">content-4-2</div>
+</div>
+
+<footer class="footer">footer</footer>
+
+</div>
+
+
+                <script>// Write JavaScript here</script>
+            
+        
+    </body>
