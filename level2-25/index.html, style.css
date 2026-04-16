@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>TOPページ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section class="fv">
+  <img src="image/fv.jpg" alt="">
+
+  <div class="fv-text">
+    <p class="vertical">
+    自分の髪を、<br>
+    人生で一番美しく。</p>
+    <h2>だから、私は石鹸。</h2>
+  </div>
+</section>
+
+<section class="banner">
+  <p>髪と頭皮の未来を変える。はじめての石鹸チャレンジセット</p>
+</section>
+
+<section class="products">
+  <div class="product">
+    <a href="#">
+      <img src="image/item1.jpg" alt="">
+      <p>サボン　モーヴ　45g</p>
+    </a>
+  </div>
+
+  <div class="product">
+    <a href="#">
+      <img src="image/item3.jpg" alt="">
+      <p>セット商品</p>
+    </a>
+  </div>
+</section>
+
+</body>
+</html>
