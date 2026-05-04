@@ -1,0 +1,86 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.fv{
+  position: relative;
+}
+
+.fv img{
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: block;
+}
+
+.fv-text{
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  color:#fff;
+  text-align:right;
+}
+
+.vertical{
+  writing-mode: vertical-rl;
+  font-size: 30px;
+  line-height: 1.6;
+  letter-spacing: 3px;
+}
+
+.fv-text h2{
+  transform: none;
+  font-size: 60px;
+  line-height: 1.4;
+}
+.banner{
+  background: #7a0026;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.products{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background: #f8f8f8;
+}
+
+.product{
+  width: 200px;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.product img{
+  width: 100%;
+  display: block;
+}
+
+.product p{
+  margin-top: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+.main-copy{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #fff;
+}
