@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                
+
+
+<meta charset="UTF-8">
+<title>J-7</title>
+
+
+
+
+<script>
+'use strict';
+
+const names= ['山田さん', '佐藤さん', '内田さん'];
+ 
+console.log('最初に配列の値を表示します。');
+for (let i = 0; i < names.length; i++){
+console.log(names[i]);
+}
+ 
+while (names.length > 0){
+const name = names.shift(); 
+console.log('配列の値を1つ消します。');
+console.log(name + 'を消しました');
+if (names.length !== 0){
+console.log('残りを表示します。');
+for (let i = 0; i < names.length; i++){
+console.log(names[i]);
+}
+}else{            
+console.log("データがなくなりました。");
+}
+}
+
+</script>
+
+
+
+                <script>// Write JavaScript here</script>
+            
+        
+    </body>
