@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                
+
+
+<meta charset="UTF-8">
+<title>J-12</title>
+
+
+
+
+<script>
+'use strict';
+
+class Test{
+  static name = 'tanaka';
+  static getName(){
+    return Test.name;
+  }
+}
+
+console.log(Test.getName());
+
+function Who(name){
+  this.name = name;
+}
+
+Who.prototype.getName = function(){
+  return this.name;
+}
+
+const user = new Who('tanaka');
+
+console.log(user.getName());
+
+</script>
+
+
+
+                <script>// Write JavaScript here</script>
+            
+        
+    </body>
