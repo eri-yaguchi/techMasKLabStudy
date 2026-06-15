@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                
+
+
+<meta charset="UTF-8">
+<title>J-13</title>
+
+
+
+<ul class="list-group">
+  <li class="list-group-item">100</li>
+  <li class="list-group-item">110</li>
+  <li class="list-group-item">120</li>
+  <li class="list-group-item">130</li>
+  <li class="list-group-item">140</li>
+</ul>
+
+<button id="change">変更</button>
+<button id="reset">リセット</button>
+
+
+
+<script>
+
+var list = document.querySelector('.list-group');
+
+var items = list.children;
+
+var defaultValues = [];
+
+Array.from(items).forEach(function(li){
+  defaultValues.push(parseInt(li.textContent));
+});
+
+document.getElementById('change').addEventListener('click', function(){
+
+  var listItems = document.getElementsByClassName('list-group-item');
+
+  for(var i = 0; i < listItems.length; i++){
+
+    var value = parseInt(listItems[i].textContent);
+    listItems[i].textContent = value * 10;
+
+  }
+
+});
+
+document.getElementById('reset').addEventListener('click', function(){
+
+  var listItems = document.getElementsByClassName('list-group-item');
+
+  Array.from(listItems).forEach(function(item, index){
+    item.textContent = defaultValues[index];
+  });
+
+});
+
+</script>
+
+
+                <script>// Write JavaScript here</script>
+            
+        
+    </body>
