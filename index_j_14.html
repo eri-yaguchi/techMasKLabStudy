@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                
+
+
+<meta charset="UTF-8">
+<title>DOM総合課題【Todoリスト】</title>
+
+
+
+<h1>Todoアプリ</h1>
+
+  <div>
+    <label for="input-todo-box">Todoタスクの入力 : </label>
+    <input id="input-todo-box" type="text">
+    <button id="add-button">追加</button>
+  </div>
+ 
+  <h2>現在のTodoリスト</h2>
+  <ul id="todo-list"></ul>
+
+<script>
+'use strict';
+
+function todo(){
+  const todos = [];
+
+  const inputTodoBox = document.getElementById('input-todo-box');
+  const addButton = document.getElementById('add-button');
+  const todoList = document.getElementById('todo-list');
+  
+  addButton.addEventListener('click', () =>{
+   const text = inputTodoBox.value;
+   todos.push(text);
+   inputTodoBox.value= '';
+   showTodos();
+     });
+
+     function showTodos(){
+      todoList.innerHTML = '';
+      todos.forEach((todo, index) => {
+
+        const li = document.createElement('li');
+        li.textContent = todo;
+
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = '削除';
+
+        deleteButton.addEventListener('click', () => {
+          deleteTodo(index);
+        });
+
+        li.appendChild(deleteButton);
+        todoList.appendChild(li);
+      })
+}
+      function deleteTodo(index){
+        todos.splice(index, 1);
+        showTodos();
+
+      }
+     }
+
+
+todo();
+
+</script>
+
+
+                <script>// Write JavaScript here</script>
+            
+        
+    </body>
