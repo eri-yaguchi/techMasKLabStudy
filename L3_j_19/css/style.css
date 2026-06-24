@@ -1,0 +1,23 @@
+body{
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(#1a237e, #000);
+  color: white;
+}
+
+h1{
+  font-size: 40px;
+}
+
+#timer{
+  font-size: 40px;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+}
