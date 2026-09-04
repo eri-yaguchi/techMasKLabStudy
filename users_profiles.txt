@@ -1,0 +1,36 @@
+SELECT 
+    u.id,
+    u.user_name,
+    u.mail_address,
+    p.name,
+    p.kana,
+    p.age,
+    p.profile
+FROM m_users u
+LEFT OUTER JOIN m_profiles p ON u.id = p.id;
+
++----+-----------------+---------------------+---------------+-----------------------+------+--------------------------+
+| id | user_name       | mail_address        | name          | kana                  | age  | profile                  |
++----+-----------------+---------------------+---------------+-----------------------+------+--------------------------+
+|  1 | Yamada Taro     | yamda@gmail.com     | 濱田 朝光     | ハマダアサヒ          |   21 | プロフィール１           |
+|  2 | Suzuki Ichiro   | suzuki@gmail.com    | 鈴木 一朗     | スズキイチロウ        |   33 | プロフィール２           |
+|  3 | Sato Jiro       | sato@gmail.com      | 佐藤 治郎     | サトウジロウ          |   23 | プロフィール３           |
+|  4 | Takahashi Ken   | takahashi@gmail.com | 金本 芳典     | カネモトヨシノリ      |   28 | プロフィール４           |
+|  5 | Tanaka Yuko     | tanaka@gmail.com    | 渡辺 温斗     | ワタナベハルト        |   30 | プロフィール５           |
+|  6 | Ito Naoki       | ito@gmail.com       | 木村 柾哉     | キムラマサヤ          |   45 | プロフィール６           |
+|  7 | Watanabe Mayu   | watanabe@gmail.com  | 平井 もも     | ヒライモモ            |   19 | プロフィール７           |
+|  8 | Yamamoto Shin   | yamamoto@gmail.com  | 山本 晋       | ヤマモトシン          |   50 | プロフィール８           |
+|  9 | Nakamura Rei    | nakamura@gmail.com  | 名井 南       | ミナイミナ            |   26 | プロフィール９           |
+| 10 | Kobayashi Kota  | kobayashi@gmail.com | 小林 晃太     | コバヤシコウタ        |   31 | プロフィール１０         |
+| 11 | Kato Ai         | kato@gmail.com      | NULL          | NULL                  | NULL | NULL                     |
+| 12 | Yoshida Ren     | yoshida@gmail.com   | NULL          | NULL                  | NULL | NULL                     |
+| 13 | Yamada Hana     | yamada_h@gmail.com  | NULL          | NULL                  | NULL | NULL                     |
+| 14 | Sasaki Yuma     | sasaki@gmail.com    | NULL          | NULL                  | NULL | NULL                     |
+| 15 | Yamaguchi Sora  | yamaguchi@gmail.com | NULL          | NULL                  | NULL | NULL                     |
+| 16 | Saito Riku      | saito@gmail.com     | NULL          | NULL                  | NULL | NULL                     |
+| 17 | Matsumoto Kaito | matsumoto@gmail.com | NULL          | NULL                  | NULL | NULL                     |
+| 18 | Inoue Mei       | inoue@gmail.com     | NULL          | NULL                  | NULL | NULL                     |
+| 19 | Kimura Takumi   | kimura@gmail.com    | NULL          | NULL                  | NULL | NULL                     |
+| 20 | Hayashi Aoi     | hayashi@gmail.com   | NULL          | NULL                  | NULL | NULL                     |
++----+-----------------+---------------------+---------------+-----------------------+------+--------------------------+
+20 rows in set (0.002 sec)
